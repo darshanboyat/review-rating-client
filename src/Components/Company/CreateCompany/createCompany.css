@@ -1,0 +1,64 @@
+.createCompany-container{
+    position: relative;
+    top: 0;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+}
+.close-btn{
+    background-color: transparent;
+    border: none;
+}
+.createCompany-form-heading{
+    color: purple;
+    font-size: 1.5rem;
+    padding-left: 3rem;
+}
+
+.createCompany-label{
+    color: gray;
+    font-weight: bold;
+    font-size: small;
+}
+.create-company-field-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.create-company-ball{
+    width: 25%;
+    height: 23%;
+    border-radius: 20rem;
+    background: linear-gradient(red, rgb(68, 68, 253));
+    position: absolute;
+    top: -6%;
+    left: -8%;
+    z-index: 999;
+  }
+  
+  .create-company-ball2{
+    width: 17%;
+    height: 15%;
+    border-radius: 20rem;
+    background-color: #b055e4;
+    position: absolute;
+    top: -3%;
+    left: 10%;
+  }
+
+  .text-sm{
+    font-size: small;
+  }
+
+  .add-company-container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(71, 72, 72, 0.7);
+
+  }
