@@ -47,7 +47,7 @@ const Index = () => {
         else if (user.msg === '' && user.loading === false)
             toast.error(user.error, {
                 position: "top-right",
-                autoClose: 2000,
+                autoClose: 500,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -58,7 +58,7 @@ const Index = () => {
         else if (user.error === '' && user.loading === false) {
             toast.success(user.msg, {
                 position: "top-right",
-                autoClose: 2000,
+                autoClose: 500,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -69,7 +69,7 @@ const Index = () => {
             // dispatch(clearState())
             setTimeout(() => {
                 navigate('/list/company')
-            }, 2000)
+            }, 600)
         }
     }, [user])
 
@@ -105,7 +105,7 @@ const Index = () => {
                                         </p>
                                     </div>
                                     <div className='col-md-12 mt-1'>
-                                        <Field placeholder="Enter Your Password" name="password" /> <br />
+                                        <Field type="password" placeholder="Enter Your Password" name="password" /> <br />
                                         <Link to="/reset" className='forgot-password'>Forgot Password ?</Link>
                                         <p className='text-danger'>
                                             <ErrorMessage name='password' />

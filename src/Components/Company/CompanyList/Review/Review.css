@@ -1,0 +1,12 @@
+.add-review-btn{
+    background: linear-gradient(60deg, rgb(249, 70, 142), blue);
+    padding: .5rem 1.5rem;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: .5rem;
+}
+
+.review-company-logo{
+    max-height: 10vh !important;
+}

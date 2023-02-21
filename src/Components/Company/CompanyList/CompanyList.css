@@ -67,3 +67,7 @@
 .company-logo{
     width: 33%;
 }
+
+.company-list-url{
+    text-decoration: none;
+}

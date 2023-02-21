@@ -3,6 +3,7 @@ import Signin from "./Components/Auth/Signin";
 import Reset from "./Components/ResetPassword";
 import NewPassword from "./Components/NewPassword";
 import { Routes, Route } from "react-router-dom";
+import CompanyReview from "./Components/Company/CompanyList/Review"
 import "./App.css";
 const Signup = lazy(() => import("./Components/Auth/Signup"));
 const CompanyList = lazy(() => import("./Components/Company/CompanyList"));
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Signin />} />
             <Route path="/auth/signup" element={<Signup />} />
             <Route path="/list/company" element={<CompanyList />} />
+            <Route path="/company/review/:id" element={<CompanyReview />} />
             <Route path="/reset" element={<Reset />} />
             <Route path="/api/user/reset/:id/:token" element={<NewPassword />} />
             <Route path="*" element={<>Not Found</>} />

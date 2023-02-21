@@ -1,8 +1,10 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     border-bottom: .5px solid gray;
+    width: 95vw;
+    margin-left: 2vw;
 }
 .logo{
     display: flex;
